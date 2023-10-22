@@ -3,7 +3,13 @@
 function calculateTotalPrice() {
   // เริ่มเขียนโค้ดตรงนี้
 }
-
+function calculateTotalPrice(cart) {
+  let total = 0;
+  for (const product of cart) {
+    total += product.price * product.quantity;
+  }
+  return total;
+}
 // ตัวอย่างการใช้งาน
 
 const cart = [
